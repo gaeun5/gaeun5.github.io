@@ -28,5 +28,7 @@ body {
 }
 
 img {
+    max-width: 100%;
+    /*display=flex 적용시 그림이 넘치지 않도록 해줌*/
     vertical-align: middle;
 }

@@ -37,7 +37,6 @@
     color: #fff;
 }
 
-.header {}
 
 .header .container {
     display: flex;
@@ -256,4 +255,104 @@
     color: #fff;
     margin: 0 0 0 600px;
     transform: translateX(-100%);
+}
+
+.main_content {
+    padding: 100px 0;
+    text-align: center;
+
+}
+
+.main_content h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.main_content p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+.main_content .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    /*gap-사이 공간 줌*/
+
+}
+
+.main_content .container figure {
+    flex: 1;
+    overflow: hidden;
+    /*overflow: hidden; - 박스에 넘치는 것들을 없앤다 */
+
+}
+
+.main_content .container figure .box {
+    margin: 0 0 20px 0;
+    /*border-radius: 76% 24% 32% 68% / 50% 42% 58% 50%;
+ border-radius: 50% 50% 50% 50%;(축약형) - 사각형은 타원으로 만들어주는 키 %대신 px 가능*/
+    overflow: hidden;
+}
+
+.main_content .container figure img {
+
+    transition: 0.5s;
+}
+
+.main_content .container figure:hover img {
+    transform: scale(1.5);
+}
+
+.main_content .container strong {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.main_content .container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #F00;
+
+}
+
+.fixed_bg {
+    padding: 150px 0;
+    /*
+    background-image: url(../img/mainvisual01.jpg);
+    background-repeat: no-repeat; - 백그라운드 움직이지 마라
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+   */
+    background: url(../img/mainvisual01.jpg) no-repeat fixed center center/cover;
+    filter: grayscale(1);
+    color: #FFF;
+    text-align: center;
+}
+
+.fixed_bg h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.fixed_bg p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+fixed_bg i {
+    font-size: 20px;
+    padding: 5px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 0 0 20px;
+    vertical-align: middle;
 }
